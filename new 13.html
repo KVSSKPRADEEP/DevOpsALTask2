@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+AngularJs Array Expressions Example
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript">
+var app = angular.module('expressionApp', [])
+app.controller("expressionController", function ($scope) {
+$scope.name = "Sri Ganesh";
+$scope.marks = [70, 75, 80, 95];
+});
+</script>
+</head>
+<body ng-app="expressionApp">
+<form id="form1">
+<div ng-controller="expressionController">
+<div>Array Array Expressions Example</div>
+Below is Marks obtained by <b>{{name}}</b> in different subjects are</br>
+<p>In Hindi he obtained <b>{{marks[0]}}</b> marks</p>
+<p>In English he obtained <b>{{marks[1]}}</b> marks</p>
+<p>In Physics he obtained <b>{{marks[2]}}</b> marks</p>
+<p>In Math he obtained <b>{{marks[3]}}</b> marks</p>
+</div>
+</form>
+</body>
+</html>
